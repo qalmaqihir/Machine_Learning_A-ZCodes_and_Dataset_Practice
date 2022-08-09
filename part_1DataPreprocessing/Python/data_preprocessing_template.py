@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset=pd.read_csv("Data.csv")
+dataset=pd.read_csv("/home/qalmaqihir/BreakGojalti/current/codes_for_books/Machine Learning A-Z (Codes and Datasets)/Part 1 - Data Preprocessing/Section 2 -------------------- Part 1 - Data Preprocessing --------------------/Python/Data.csv")
 X=dataset.iloc[:,:-1].values # We can use loc with colunm names specified? not working
 # X= dataset.loc(["Country","Age","Salary"])
 y=dataset.iloc[:,-1].values
