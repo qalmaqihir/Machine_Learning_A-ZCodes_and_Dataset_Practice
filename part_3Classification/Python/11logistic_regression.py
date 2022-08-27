@@ -41,8 +41,15 @@ print(f" A prediction {classifier.predict(sc.transform([[30,87000]]))}")
 
 # Predicting the test results
 y_pred = classifier.predict(X_test)
+print("SIde bu side")
 print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1))))
 
+# Making the confusion matrix
+from sklearn.metrics import confusion_matrix, accuracy_score
+cm = confusion_matrix(y_test,y_pred)
+print(cm)
+
+print(accuracy_score(y_pred,y_test))
 
 # Visualizing the Training set reuslt
 from matplotlib.colors import ListedColormap
