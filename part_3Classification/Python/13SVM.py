@@ -33,7 +33,7 @@ print(f"After feautre scaling the X_test\n{X_test}\n")
 
 # Training the logistic Regression model on the training set
 from sklearn.svm import SVC
-classifier=SVC()
+classifier=SVC(kernel='linear', random_state=0)
 classifier.fit(X_train,y_train)
 
 # Predicting a new result
@@ -50,7 +50,7 @@ cm = confusion_matrix(y_test,y_pred)
 print(cm)
 
 print(accuracy_score(y_pred,y_test))
-
+#
 # # Visualizing the Training set reuslt
 # from matplotlib.colors import ListedColormap
 # X_set, y_set = sc.inverse_transform(X_train), y_train
@@ -67,7 +67,7 @@ print(accuracy_score(y_pred,y_test))
 # plt.ylabel('Estimated Salary')
 # plt.legend()
 # plt.show()
-#
+
 # # Visualising the test result
 # from matplotlib.colors import ListedColormap
 # X_set, y_set = sc.inverse_transform(X_test), y_test
