@@ -39,24 +39,28 @@ print(corpus)
 # Creating the bag of words model
 from sklearn.feature_extraction.text import CountVectorizer
 
+# cv = CountVectorizer(max_features=1500)
 cv = CountVectorizer(max_features=1500)
 X = cv.fit_transform(corpus).toarray()
-y=dataset[:,-1].values
-
-print(len(X[0]))
-
+# print(len(X))
+y=dataset.iloc[:,-1].values
+# print(len(y))
+# print(len(X[0]))
+#
 # Splitting the dataset into the Training and testing set
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(X,y, test_size=0.25)
 
 # Training the Naive Bayes model training set
 from sklearn.naive_bayes import BernoulliNB, CategoricalNB, GaussianNB
-binary_nb = BernoulliNB()
-binary_nb.fit(x_train, y_train)
+# binary_nb = BernoulliNB()
+# binary_nb.fit(x_train, y_train)
+gaussain_nb = GaussianNB()
+gaussain_nb.fit(x_train, y_train)
 
 # Predicting the test results
-y_pred = binary_nb.predict(x_test)
-print(np.concatenate((y_pred.reshape(len(y_pred),1)),(y_test.reshape(len(y_test,1))),1))
+y_pred = gaussain_nb.predict(x_test)
+print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)),1))
 
 # Making the confusion matrix
 from sklearn.metrics import confusion_matrix, accuracy_score
