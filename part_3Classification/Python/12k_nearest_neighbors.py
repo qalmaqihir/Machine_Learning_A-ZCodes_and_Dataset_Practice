@@ -31,7 +31,7 @@ X_test=sc.transform(X_test)
 print(f"After feautre scaling the X_train\n{X_train}\n")
 print(f"After feautre scaling the X_test\n{X_test}\n")
 
-# Training the logistic Regression model on the training set
+# Training the Knn model on the training set
 from sklearn.neighbors import KNeighborsClassifier
 classifier = KNeighborsClassifier(n_neighbors=3,p=2,metric = "minkowski")
 classifier.fit(X_train,y_train)

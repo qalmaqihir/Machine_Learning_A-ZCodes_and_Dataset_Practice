@@ -31,7 +31,7 @@ X_test=sc.transform(X_test)
 print(f"After feautre scaling the X_train\n{X_train}\n")
 print(f"After feautre scaling the X_test\n{X_test}\n")
 
-# Training the logistic Regression model on the training set
+# Training the Random Forest model on the training set
 from sklearn.ensemble import RandomForestClassifier
 classifier=RandomForestClassifier()
 classifier.fit(X_train,y_train)
