@@ -8,7 +8,7 @@ import tensorflow as tf
 
 # Part - I Data Preprocessing
 # Importing Dataset
-dataset_path="/home/qalmaqihir/BreakGojalti/current/codes_for_books/Machine Learning A-Z (Codes and Datasets)/Part 8 - Deep Learning/Section 39 - Artificial Neural Networks (ANN)/Python/Churn_Modelling.csv"
+dataset_path="../../Datasets/Churn_Modelling.csv"
 dataset = pd.read_csv(dataset_path)
 print(dataset.head())
 x = dataset.iloc[:,3:-1].values

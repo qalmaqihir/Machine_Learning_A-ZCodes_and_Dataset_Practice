@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset_path="/home/qalmaqihir/BreakGojalti/current/codes_for_books/Machine Learning A-Z (Codes and Datasets)/Part 6 - Reinforcement Learning/Section 32 - Upper Confidence Bound (UCB)/Python/Ads_CTR_Optimisation.csv"
+dataset_path="../../Datasets/Ads_CTR_Optimisation.csv"
 dataset = pd.read_csv(dataset_path)
 print(dataset)
 

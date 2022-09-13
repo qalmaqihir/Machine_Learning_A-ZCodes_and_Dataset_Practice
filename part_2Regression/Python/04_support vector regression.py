@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 # Importing the dataset
-dataset = pd.read_csv('/home/qalmaqihir/BreakGojalti/current/codes_for_books/Machine Learning A-Z (Codes and Datasets)/Part 2 - Regression/Section 7 - Support Vector Regression (SVR)/Python/Position_Salaries.csv')
+dataset = pd.read_csv('../../Datasets/Position_Salaries.csv')
 X= dataset.iloc[:,1:-1].values
 y=dataset.iloc[:,-1].values
 

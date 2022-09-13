@@ -17,7 +17,7 @@ import apyori
 
 
 # Data Preprocessing
-dataset_path="/home/qalmaqihir/BreakGojalti/current/codes_for_books/Machine Learning A-Z (Codes and Datasets)/Part 5 - Association Rule Learning/Section 28 - Apriori/Python/Market_Basket_Optimisation.csv"
+dataset_path="../../Datasets/Market_Basket_Optimisation.csv"
 dataset = pd.read_csv(dataset_path,header=None)
 print(dataset.head())
 

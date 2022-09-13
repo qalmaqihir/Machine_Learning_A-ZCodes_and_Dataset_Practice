@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 # Importing the dataset, its a tsv file and we will ignor the " to avoid processing errors
 
-dataset_path="/home/qalmaqihir/BreakGojalti/current/codes_for_books/Machine Learning A-Z (Codes and Datasets)/Part 7 - Natural Language Processing/Section 36 - Natural Language Processing/Python/Restaurant_Reviews.tsv"
+dataset_path="../../Datasets/Restaurant_Reviews.tsv"
 dataset=pd.read_csv(dataset_path,delimiter='\t', quoting=3)
 print(dataset.head())
 

@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Importing the Dataset
-dataset_path="/home/qalmaqihir/BreakGojalti/current/codes_for_books/Machine Learning A-Z (Codes and Datasets)/Part 4 - Clustering/Section 24 - K-Means Clustering/Python/Mall_Customers.csv"
+dataset_path="../../DatasetsMall_Customers.csv"
 dataset=pd.read_csv(dataset_path)
 # print(dataset)
 X = dataset.iloc[:,[3,4]].values

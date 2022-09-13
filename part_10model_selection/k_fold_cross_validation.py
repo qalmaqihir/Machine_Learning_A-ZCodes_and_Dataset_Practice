@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-dataset_path="/home/qalmaqihir/BreakGojalti/current/codes_for_books/Machine Learning A-Z (Codes and Datasets)/Part 3 - Classification/Section 14 - Logistic Regression/Python/Social_Network_Ads.csv"
+dataset_path="../Datasets/Social_Network_Ads.csv"
 dataset=pd.read_csv(dataset_path)
 print(dataset.head())
 X= dataset.iloc[:,:-1].values

@@ -1,6 +1,6 @@
 # Prinicpal Component Analysis
 
-dataset_path="/home/qalmaqihir/BreakGojalti/current/codes_for_books/Machine Learning A-Z (Codes and Datasets)/Part 9 - Dimensionality Reduction/Section 43 - Principal Component Analysis (PCA)/Python/Wine.csv"
+dataset_path="../Datasets/Wine.csv"
 
 # Import the libraries
 import numpy as np
