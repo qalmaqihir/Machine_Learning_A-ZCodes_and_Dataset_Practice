@@ -28,7 +28,7 @@ plt.clim(-0.5,9.5)
 
 #
 # # Spliting the dataset into the training and testing
-# from sklearn.model_selection import train_test_split
+# from sklearn.part_10model_selection import train_test_split
 # X_train, X_test, y_train,  y_test = train_test_split(X,y, test_size=0.25)
 #
 # print(f"Lenght of x_test {len(X_test)}\nlenght of y_test {len(y_test)}")
