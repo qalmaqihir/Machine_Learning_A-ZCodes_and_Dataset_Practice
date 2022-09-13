@@ -2,23 +2,23 @@
 The Course Machine Learning A-Z with all its codes and datasets implementation both in python and R
 The Structure of the repository, in case you clone it.
 
-`── part_10model_selection
-│   ├── grid_search.py
-│   ├── k_fold_cross_validation.py
-│   └── xg_boost.py
-├── part_1DataPreprocessing
-│   └── Python
-│       ├── data_preprocessing_template.py
-│       └── data_preprocessing_tools.py
-├── part_2Regression
-│   └── Python
-│       ├── 00_simple_linear_regression.py
-│       ├── 01_multiple_linear_regression.py
-│       ├── 03_polynomial_linear_regression.py
-│       ├── 04_support vector regression.py
-│       ├── 05_decision_tree_regression.py
-│       └── 06_random_forest_regressor.py
-├── part_3Classification
+`── part_10model_selection  
+│   ├── grid_search.py  
+│   ├── k_fold_cross_validation.py  
+│   └── xg_boost.py  
+├── part_1DataPreprocessing  
+│   └── Python  
+│       ├── data_preprocessing_template.py  
+│       └── data_preprocessing_tools.py  
+├── part_2Regression  
+│   └── Python  
+│       ├── 00_simple_linear_regression.py  
+│       ├── 01_multiple_linear_regression.py  
+│       ├── 03_polynomial_linear_regression.py  
+│       ├── 04_support vector regression.py  
+│       ├── 05_decision_tree_regression.py  
+│       └── 06_random_forest_regressor.py  
+├── part_3Classification  
 │   └── Python
 │       ├── 11logistic_regression.py
 │       ├── 12k_nearest_neighbors.py
